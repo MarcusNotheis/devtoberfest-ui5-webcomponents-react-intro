@@ -2,7 +2,7 @@ import "@ui5/webcomponents/dist/Calendar.js";
 import { useEffect, useRef } from "react";
 
 export function CalenderUI5() {
-  const ref = useRef(null);
+  const ref = useRef<any>(null);
 
   useEffect(() => {
     const currentRef = ref.current;
