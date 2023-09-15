@@ -1,0 +1,38 @@
+:root {
+  font-family: "72", "72full", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --dividerBackground: rgb(237, 248, 264);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.textColorRed {
+  color: #f00;
+}
+
+.flexGap {
+  gap: 1rem;
+}
+
+[font-family="header"]:is([font-size="h1"], [font-size="h2"], [font-size="text"]) {
+  text-align: start;
+  margin-inline-start: 1rem;
+}
+
+[font-family="header"][data-subtitle] {
+  margin-block-start: 0;
+  padding-block-start: 0;
+}
+
+[font-family="header"]:has(+ [font-family="header"][data-subtitle]) {
+  margin-block-end: 0;
+  padding-block-end: 0.5rem;
+}

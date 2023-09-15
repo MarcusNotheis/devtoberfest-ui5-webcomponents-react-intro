@@ -1,0 +1,9 @@
+.contactCard {
+    width: 18rem;
+    display: grid;
+    grid-template:
+    "avatar name"
+    "avatar mail"
+    "avatar socialLinks"
+    ;
+}

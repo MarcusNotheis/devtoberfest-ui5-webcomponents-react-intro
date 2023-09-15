@@ -1,0 +1,40 @@
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 0 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 0 min-content;
+    place-items: start center;
+}
+
+.grid:has([data-title]) {
+    grid-template-rows: minmax(0, 2rem) min-content;
+    row-gap: 1rem;
+}
+
+.textStart {
+    grid-area: 1 / 1;
+    place-self: center;
+    margin: unset;
+    padding: unset;
+}
+
+.contentStart {
+    grid-area: 2 / 1;
+}
+
+.textEnd {
+    grid-area: 1 / 2;
+    place-self: center;
+    margin: unset;
+    padding: unset;
+}
+
+.contentEnd {
+    grid-area: 2 / 2;
+}
+
+.fadeOutStart .contentStart,
+.fadeOutStart .textStart {
+    opacity: 0.7;
+}
