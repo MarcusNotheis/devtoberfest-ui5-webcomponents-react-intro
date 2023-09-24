@@ -1,4 +1,4 @@
-import { Appear, FlexBox, Heading, Slide, Text } from "spectacle";
+import { FlexBox, Heading, Slide, Text } from "spectacle";
 import ui5Ecosystem from "../assets/stack.svg";
 import DevotoberFest from "../assets/DevtoberfestTemplate.png";
 import SAPLogo from "../assets/SAP.png";
@@ -13,7 +13,6 @@ export function Intro() {
         backgroundSize={"100%"}
         padding={"0px"}
       >
-        {/*<Appear>*/}
         <FlexBox
           flexDirection={"column"}
           alignItems={"Start"}
@@ -58,7 +57,6 @@ export function Intro() {
             }}
           />
         </FlexBox>
-        {/*</Appear>*/}
       </Slide>
 
       <Slide>
