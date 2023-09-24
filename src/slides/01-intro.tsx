@@ -13,52 +13,52 @@ export function Intro() {
         backgroundSize={"100%"}
         padding={"0px"}
       >
-        <Appear>
-          <FlexBox
-            flexDirection={"column"}
-            alignItems={"Start"}
-            justifyContent={"space-between"}
-            position="absolute"
-            backgroundColor={"var(--dividerBackground)"}
-            bottom={"0px"}
-            left="0px"
-            right="0px"
-            height={"48%"}
+        {/*<Appear>*/}
+        <FlexBox
+          flexDirection={"column"}
+          alignItems={"Start"}
+          justifyContent={"space-between"}
+          position="absolute"
+          backgroundColor={"var(--dividerBackground)"}
+          bottom={"0px"}
+          left="0px"
+          right="0px"
+          height={"48%"}
+        >
+          <Heading
+            textAlign={"start"}
+            style={{
+              marginLeft: "54px",
+              marginBlock: 0,
+              paddingBottom: 0,
+            }}
           >
-            <Heading
-              textAlign={"start"}
-              style={{
-                marginLeft: "54px",
-                marginBlock: 0,
-                paddingBottom: 0,
-              }}
-            >
-              Build your own React application with <br /> UI5 Web Components
-              for React
-            </Heading>
-            <Text
-              color={"secondary"}
-              style={{
-                marginLeft: "54px",
-                marginBlock: 0,
-              }}
-            >
-              Marcus Notheis & Lukas Harbarth
-              <br />
-              September 28, 2023
-            </Text>
+            Build your own React application with <br /> UI5 Web Components for
+            React
+          </Heading>
+          <Text
+            color={"secondary"}
+            style={{
+              marginLeft: "54px",
+              marginBlock: 0,
+            }}
+          >
+            Marcus Notheis & Lukas Harbarth
+            <br />
+            September 28, 2023
+          </Text>
 
-            <img
-              src={SAPLogo}
-              alt={"SAP Logo"}
-              height={40}
-              style={{
-                marginLeft: "70px",
-                marginBlockEnd: "2rem",
-              }}
-            />
-          </FlexBox>
-        </Appear>
+          <img
+            src={SAPLogo}
+            alt={"SAP Logo"}
+            height={40}
+            style={{
+              marginLeft: "70px",
+              marginBlockEnd: "2rem",
+            }}
+          />
+        </FlexBox>
+        {/*</Appear>*/}
       </Slide>
 
       <Slide>
